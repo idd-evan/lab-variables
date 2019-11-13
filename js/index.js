@@ -1,3 +1,5 @@
+/*
+
 // String is a serie of characters
 console.log(`hello world`);
 // Number is a number
@@ -105,3 +107,58 @@ console.log(`${celsius}°C is ${fahrenheit}°F`);
 celsius = fahrenheit - 32;
 
 console.log(`${fahrenheit}°C is ${celsius}°F`);
+
+*/
+
+
+
+
+
+
+/* FUCNTIONS ****
+
+let itemsInCart = 0;
+let name = `George`;
+
+//Things we receive: paranaters
+//functions have their own variables, don't effect variables outside.
+function addItemsToTheCart(qty=1) {
+
+    itemsInCart += qty;
+    console.log(`You added ${qty} item(s).s There are now: ${itemsInCart}.`);
+
+}
+
+console.log(itemsInCart);
+addItemsToTheCart();
+console.log(itemsInCart);
+
+*/
+
+
+/*   CALCULATOR**********
+
+function getTheSum(first, second) {
+
+console.log(`You want to sum ${first} and ${second}.`)
+return first + second;
+
+}
+console.log(`The sum is: ${getTheSum(13, 14)}.`)
+console.log(`The sum is: ${getTheSum(33, 71)}.`)
+console.log(`The sum is: ${getTheSum(32, 74)}.`)
+
+*/
+
+let itemsInCart = 0;
+
+function addItemsToTheCart(cart, qty=1) {
+
+    console.log(`You added ${qty} item(s) to your ${cart}.`);
+
+
+    return cart + qty;
+}
+
+itemsInCart = addItemsToTheCart(itemsInCart, 1);
+itemsInCart = addItemsToTheCart(itemsInCart, 5);
